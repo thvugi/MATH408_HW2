@@ -1,0 +1,227 @@
+f=@(x) (x.^2-7).^3
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)(x.^2-7).^3
+
+fd = @(x) 6*x*(x.^2-7).^2
+
+fd =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)6*x*(x.^2-7).^2
+
+r = sqrt(7)
+
+r =
+
+   2.645751311064591
+
+%this is the sqrt of 7
+%fd is the derivative 
+%f is the original function
+[count,x,ei,er,e2] = newton(f,fd,2,(1e-5),r)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid format.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/thvuvi/Documents/Semester 3/MTH 408/HW-2/newton.m', 16)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/thvuvi/Documents/Semester 3/MTH 408/HW-2/newton.m',16,0)">line 16</a>)
+           fprintf(count, x, ei, er);
+} 
+[count,x,ei,er,e2] = newton(f,fd,2,(1e-5),r)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid format.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/thvuvi/Documents/Semester 3/MTH 408/HW-2/newton.m', 16)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/thvuvi/Documents/Semester 3/MTH 408/HW-2/newton.m',16,0)">line 16</a>)
+           fprintf(count, x, ei, er);
+} 
+[count,x,ei,er,e2] = newton(f,fd,2,(1e-5),r)
+iiiiiiiiiiiiiiiiiiiiiiiiiii
+count =
+
+    28
+
+
+x =
+
+   2.645742036750296
+
+
+ei =
+
+     9.274314295204533e-06
+
+
+er =
+
+   0.666665790330830
+
+
+e2 =
+
+     1.391148972951228e-05
+
+[count,x,ei,er,e2] = newton(f,fd,2,(1e-5),r)
+
+count =
+
+    28
+
+
+x =
+
+   2.645742036750296
+
+
+ei =
+
+     9.274314295204533e-06
+
+
+er =
+
+   0.666665790330830
+
+
+e2 =
+
+     1.391148972951228e-05
+
+diary off
+[count,x,ei,er,e2] = newton(f,fd,2,(1e-5),r)
+1
+2.250000e+00
+3.957513e-01
+6.128541e-01
+2
+2.393519e+00
+2.522328e-01
+6.373518e-01
+3
+2.482026e+00
+1.637251e-01
+6.491031e-01
+4
+2.538401e+00
+1.073501e-01
+6.556726e-01
+5
+2.574941e+00
+7.081005e-02
+6.596183e-01
+6
+2.598869e+00
+4.688216e-02
+6.620834e-01
+7
+2.614637e+00
+3.111382e-02
+6.636601e-01
+8
+2.625070e+00
+2.068084e-02
+6.646834e-01
+9
+2.631991e+00
+1.376007e-02
+6.653536e-01
+10
+2.636590e+00
+9.161391e-03
+6.657953e-01
+11
+2.639649e+00
+6.102288e-03
+6.660875e-01
+12
+2.641685e+00
+4.065841e-03
+6.662814e-01
+13
+2.643042e+00
+2.709518e-03
+6.664101e-01
+14
+2.643945e+00
+1.805882e-03
+6.664958e-01
+15
+2.644548e+00
+1.203716e-03
+6.665528e-01
+16
+2.644949e+00
+8.023859e-04
+6.665908e-01
+17
+2.645216e+00
+5.348834e-04
+6.666161e-01
+18
+2.645395e+00
+3.565709e-04
+6.666330e-01
+19
+2.645514e+00
+2.377059e-04
+6.666442e-01
+20
+2.645593e+00
+1.584671e-04
+6.666517e-01
+21
+2.645646e+00
+1.056431e-04
+6.666567e-01
+22
+2.645681e+00
+7.042805e-05
+6.666600e-01
+23
+2.645704e+00
+4.695172e-05
+6.666622e-01
+24
+2.645720e+00
+3.130101e-05
+6.666637e-01
+25
+2.645730e+00
+2.086728e-05
+6.666647e-01
+26
+2.645737e+00
+1.391149e-05
+6.666654e-01
+27
+2.645742e+00
+9.274314e-06
+6.666658e-01
+
+count =
+
+    28
+
+
+x =
+
+   2.645742036750296
+
+
+ei =
+
+     9.274314295204533e-06
+
+
+er =
+
+   0.666665790330830
+
+
+e2 =
+
+     1.391148972951228e-05
+
+diary off
